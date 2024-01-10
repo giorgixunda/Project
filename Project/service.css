@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    background: url(goa\ copy.jpg) no-repeat;
+    background-size: cover;
+}
+img{
+    width: 250px;
+    display: inline;
+}
+img:hover{
+    transform: scale(1.7);
+    transition: 3s ease;
+}
+.centers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.service{
+    box-shadow: 2px  2px 2px 2px green;
+    position: absolute;
+    top: 150px;
+    color: white;
+    width: 700px;
+    height: 330px;
+}
+button{
+    display: block;
+    background-color: orangered;
+    width: 100px;
+}
+#a{
+    color: green;
+}
+#a:hover{
+    color: salmon;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    box-shadow: 2px 2px 2px 2px green;
+}
+ul, li, a{
+    display: inline-block;
+    margin-right: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    color: orangered;
+}
+a:hover{
+    color: green;
+}
+.block{
+    height: 100vh;
+}
+.portofilio{
+    box-shadow: 2px 2px 2px 2px rgb(18, 233, 18);
+    width: 700px;
+    text-align: center;
+    height: 115px;
+    color: white;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a, i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+    margin-right: 5px;
+}
+.block2{
+    height: 5vh;
+}
