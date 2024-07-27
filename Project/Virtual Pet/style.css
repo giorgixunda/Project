@@ -1,0 +1,185 @@
+* {
+    color: white;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: brown;
+    animation-name: gradientShift;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#pet-cont {
+    position: relative;
+}
+
+#petimg {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #444;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    transition: transform 0.5s ease;
+}
+
+#petimg.playing {
+    transform: scale(1.1); 
+}
+
+#status-bar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#happiness-bar, #hunger-bar {
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+#happiness-bar {
+    background: #ffcc00;
+}
+
+#hunger-bar {
+    background: #ff6666;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button:hover {  
+    background-color: #0066b3;
+}
+
+.pet-cont{
+    margin: 20px;
+}
+
+#feed-button{
+    border: 1px solid transparent;
+    background-color: orangered;
+    color: white;
+    width: 125px;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#feed-button:hover{
+    color: green;
+}
+
+#feed-button:active{
+    color: gold;
+}
+
+#play-button{
+    border: 1px solid transparent;
+    background-color: orangered;
+    color: white;
+    width: 125px;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#play-button:hover{
+    color: blue;
+}
+
+#play-button:active{
+    color: salmon;
+}
+
+#sleep-button{
+    border: 1px solid transparent;
+    background-color: orangered;
+    color: white;
+    width: 125px;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#sleep-button:hover{
+    color: bisque;
+}
+
+#sleep-button:active{
+    color: blue;
+}
+
+#h1{
+    animation-name: change-color;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change-color{
+    0%{
+        color:bisque;
+    }
+    10%{
+        color: orange;
+    }
+    20%{
+        color: green;
+    }
+    30%{
+        color: cornflowerblue;
+    }
+    40%{
+        color: coral;
+    }
+    50%{
+        color: seagreen;
+    }
+    60%{
+        color: crimson;
+    }
+    70%{
+        color: deeppink;
+    }
+    80%{
+        color: skyblue;
+    }
+    90%{
+        color: burlywood;
+    }
+    100%{
+        color: lime;
+    }
+}
+
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
